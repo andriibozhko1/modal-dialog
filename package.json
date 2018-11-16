@@ -23,6 +23,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
     "gulp-server-livereload": "^1.9.2",
+    "normalize.css": "^8.0.1",
     "run-sequence": "^2.2.1"
   }
 }

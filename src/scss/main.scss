@@ -1,16 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis");
 // add fonts.
 $font: "Dosis", sans-serif;
-* {
-  padding: 0;
-  margin: 0;
-}
-.active {
-  display: block;
-}
-.hide {
-  display: none;
-}
+
 .open-modal-dialog {
   border: 1px solid #000;
   cursor: pointer;
@@ -20,6 +11,12 @@ $font: "Dosis", sans-serif;
   margin: auto;
   background: #fff;
   padding: 5px;
+}
+.active {
+  display: block;
+}
+.hide {
+  display: none;
 }
 .modal {
   position: fixed;
@@ -57,7 +54,7 @@ $font: "Dosis", sans-serif;
   &__btns--block {
     padding: 50px 0 70px 0;
   }
-  &__cancel--btn {
+  &__btns {
     height: 50px;
     width: 200px;
     padding: 10px;
@@ -67,17 +64,12 @@ $font: "Dosis", sans-serif;
     border-radius: 10px;
     font-size: 20px;
     color: gray;
+    font-family: $font;
   }
-  &__unistall--btn {
-    height: 50px;
-    width: 200px;
-    padding: 10px;
-    cursor: pointer;
-    border: 0;
+  .unistall {
     background: red;
-    border-radius: 10px;
-    font-size: 20px;
     color: #fff;
+    border: 0;
   }
 }
 @keyframes dialogAnim {

@@ -1,14 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis");
-* {
-  padding: 0;
-  margin: 0; }
-
-.active {
-  display: block; }
-
-.hide {
-  display: none; }
-
 .open-modal-dialog {
   border: 1px solid #000;
   cursor: pointer;
@@ -18,6 +8,12 @@
   margin: auto;
   background: #fff;
   padding: 5px; }
+
+.active {
+  display: block; }
+
+.hide {
+  display: none; }
 
 .modal {
   position: fixed;
@@ -48,7 +44,7 @@
     width: 70%; }
   .modal__btns--block {
     padding: 50px 0 70px 0; }
-  .modal__cancel--btn {
+  .modal__btns {
     height: 50px;
     width: 200px;
     padding: 10px;
@@ -57,17 +53,12 @@
     border: 2px solid #e3e2e2;
     border-radius: 10px;
     font-size: 20px;
-    color: gray; }
-  .modal__unistall--btn {
-    height: 50px;
-    width: 200px;
-    padding: 10px;
-    cursor: pointer;
-    border: 0;
+    color: gray;
+    font-family: "Dosis", sans-serif; }
+  .modal .unistall {
     background: red;
-    border-radius: 10px;
-    font-size: 20px;
-    color: #fff; }
+    color: #fff;
+    border: 0; }
 
 @keyframes dialogAnim {
   0% {
