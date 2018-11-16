@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Modal Dialog</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="normalize/normalize.css">
+    <link rel="stylesheet" href="normalize/normalize.css" />
   </head>
   <body>
     <button class="open-modal-dialog">run popup</button>
-
+    <!-- MODAL -->
     <div class="modal hide">
       <div class="modal__dialog">
         <div class="modal__header">
           <a href="#" class="btn-close" data-type="btn-close">
-            <img src="img/icon-popup-close.svg" alt="close"/>
+            <img class="modal__icon-close" src="img/icon-popup-close.svg" alt="close" />
           </a>
         </div>
+        <!-- CONTENT -->
         <div class="modal__content">
           <img
             class="modal__img"
@@ -28,9 +29,7 @@
             Are you sure you want to uninstall the Shazam app
           </div>
           <div class="modal__btns--block">
-            <button data-type="btn-close" class="modal__btns">
-              Cancel
-            </button>
+            <button data-type="btn-close" class="modal__btns">Cancel</button>
             <button data-type="btn-unistall" class="modal__btns unistall">
               Unistall
             </button>
