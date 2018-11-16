@@ -9,7 +9,7 @@
 .hide {
   display: none; }
 
-.OpenModalDialog {
+.open-modal-dialog {
   border: 1px solid #000;
   cursor: pointer;
   font-family: sans-serif;
@@ -33,7 +33,7 @@
     border-radius: 10px;
     margin: 7% auto;
     position: relative;
-    animation: dialogAnim .4s; }
+    animation: dialogAnim 0.4s; }
   .modal__header {
     padding: 15px; }
   .modal__content {

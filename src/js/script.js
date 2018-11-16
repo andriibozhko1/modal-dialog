@@ -1,6 +1,6 @@
 (function() {
   const modal = document.querySelector(".modal");
-  const openModalBtn = document.querySelector(".OpenModalDialog");
+  const openModalBtn = document.querySelector(".open-modal-dialog");
   const closeModalBtns = document.querySelectorAll("[data-type=btn-close]");
   const unistall = document.querySelector("[data-type=btn-unistall]");
   function closeDialog() {

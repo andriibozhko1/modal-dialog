@@ -5,13 +5,13 @@ $font: "Dosis", sans-serif;
   padding: 0;
   margin: 0;
 }
- .active {
-    display: block;
-  }
-  .hide {
-    display: none;
-  }
-.OpenModalDialog {
+.active {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.open-modal-dialog {
   border: 1px solid #000;
   cursor: pointer;
   font-family: sans-serif;
@@ -34,10 +34,10 @@ $font: "Dosis", sans-serif;
     width: 50%;
     background: #ffffff;
     border-radius: 10px;
-    margin:7% auto;
+    margin: 7% auto;
     position: relative;
-    -webkit-animation: dialogAnim .4s;
-            animation: dialogAnim .4s;
+    -webkit-animation: dialogAnim 0.4s;
+            animation: dialogAnim 0.4s;
   }
   &__header {
     padding: 15px;
@@ -74,7 +74,7 @@ $font: "Dosis", sans-serif;
     width: 200px;
     padding: 10px;
     cursor: pointer;
-    border:0;
+    border: 0;
     background: red;
     border-radius: 10px;
     font-size: 20px;
@@ -83,20 +83,20 @@ $font: "Dosis", sans-serif;
 }
 @-webkit-keyframes dialogAnim {
   0% {
-    top:-200px;
-    opacity:0
+    top: -200px;
+    opacity: 0;
   }
-  100%{
+  100% {
     top: 0;
     opacity: 1;
   }
 }
 @keyframes dialogAnim {
   0% {
-    top:-200px;
-    opacity:0
+    top: -200px;
+    opacity: 0;
   }
-  100%{
+  100% {
     top: 0;
     opacity: 1;
   }
