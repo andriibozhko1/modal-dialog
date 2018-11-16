@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+// add fonts.
+$font: "Dosis", sans-serif;
+.active {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.open-modal-dialog {
+  border: 1px solid #000;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 15px;
+  display: block;
+  margin: auto;
+  background: #fff;
+  padding: 5px;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  &__dialog {
+    min-height: 500px;
+    width: 50%;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 7% auto;
+    position: relative;
+    -webkit-animation: dialogAnim 0.4s;
+            animation: dialogAnim 0.4s;
+  }
+  &__header {
+    padding: 15px;
+  }
+  &__content {
+    text-align: center;
+  }
+  &__img {
+    width: 200px;
+  }
+  &__text {
+    font-family: $font;
+    font-size: 45px;
+    font-weight: 400;
+    margin: auto;
+    width: 70%;
+  }
+  &__btns--block {
+    padding: 50px 0 70px 0;
+  }
+  &__cancel--btn {
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+    background: #fff;
+    border: 2px solid rgb(227, 226, 226);
+    border-radius: 10px;
+    font-size: 20px;
+    color: gray;
+  }
+  &__unistall--btn {
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+    border: 0;
+    background: red;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+@-webkit-keyframes dialogAnim {
+  0% {
+    top: -200px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes dialogAnim {
+  0% {
+    top: -200px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}

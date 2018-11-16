@@ -7,16 +7,13 @@
     modal.classList.remove("active");
     modal.classList.add("hide");
   }
-  function openDialog() {
-    modal.classList.remove("hide");
-    modal.classList.add("active");
-  }
-  openModalBtn.addEventListener("click", function() {
-    if (modal.classList.contains('hide')) {
-      openDialog();
-    }
-  });
   for (let i = 0; i < closeModalBtns.length; i++) {
+    openModalBtn.addEventListener("click", function() {
+      if (modal.className == "modal hide") {
+        modal.classList.remove("hide");
+        modal.classList.add("active");
+      }
+    });
     closeModalBtns[i].addEventListener("click", function() {
       closeDialog();
     });
