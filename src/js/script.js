@@ -13,7 +13,7 @@
   }
   for (let i = 0; i < closeModalBtns.length; i++) {
     openModalBtn.addEventListener("click", function() {
-      if (modal.className == "hide") {
+      if (modal.classList.contains('hide')) {
         openDialog();
       }
     });
